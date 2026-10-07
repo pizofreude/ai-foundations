@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "./styles/fonts.css";
+@import "./styles/theme.css";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #000000;
+    overflow-x: hidden;
+  }
+}

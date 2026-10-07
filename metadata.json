@@ -1,0 +1,8 @@
+{
+  "name": "KrackedDevs - AI Foundations 101: Vibe Coding",
+  "description": "Cinematic hero experience for AI Foundations 101: Vibe Coding, an initiative by Selangor Youth Community (SAY), MyDIGITAL & KrackedDevs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
