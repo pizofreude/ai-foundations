@@ -48,8 +48,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             </span>
           ) : (
             <img
-              src="https://krackeddevs.com/press/logos/kd-wordmark.svg"
+              src="/kd-wordmark.svg"
               alt="KrackedDevs"
+              crossOrigin="anonymous"
               className={`h-7 sm:h-8 w-auto object-contain max-w-[200px] ${isDarkTheme ? 'brightness-0 invert' : ''}`}
               onError={() => setLogoError(true)}
             />

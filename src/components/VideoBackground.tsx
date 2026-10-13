@@ -177,6 +177,7 @@ export const VideoBackground: React.FC<VideoBackgroundProps> = ({
         <video
           ref={videoRef}
           src={videoUrl}
+          crossOrigin="anonymous"
           autoPlay
           muted
           playsInline
