@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0D10" />
+      <stop offset="60%" stop-color="#0E1116" />
+      <stop offset="100%" stop-color="#07090C" />
+    </linearGradient>
+
+    <!-- Emerald Ambience Glow -->
+    <radialGradient id="emeraldGlowRight" cx="78%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.18" />
+      <stop offset="45%" stop-color="#15803d" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0B0D10" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="emeraldGlowLeft" cx="15%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.12" />
+      <stop offset="60%" stop-color="#0B0D10" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(24, 29, 38, 0.88)" />
+      <stop offset="100%" stop-color="rgba(12, 15, 20, 0.94)" />
+    </linearGradient>
+
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.18)" />
+      <stop offset="50%" stop-color="rgba(34, 197, 94, 0.35)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.08)" />
+    </linearGradient>
+
+    <!-- Chip Background -->
+    <linearGradient id="chipBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.08)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.03)" />
+    </linearGradient>
+
+    <!-- Subtle Tech Grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.025)" stroke-width="1"/>
+      <circle cx="0" cy="0" r="1" fill="rgba(34, 197, 94, 0.2)" />
+    </pattern>
+
+    <filter id="badgeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background Fill & Grid -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <rect width="1200" height="630" fill="url(#emeraldGlowRight)" />
+  <rect width="1200" height="630" fill="url(#emeraldGlowLeft)" />
+
+  <!-- 2. Safe-zone Left Content (x=72, well inside 60px safe margin) -->
+  
+  <!-- Brand Wordmark & Tag -->
+  <g transform="translate(72, 70)">
+    <!-- Small KrackedDevs wordmark -->
+    <text x="0" y="20" font-family="Inter" font-size="16" font-weight="600" fill="#9CA3AF" letter-spacing="1.2">KRACKEDDEVS</text>
+    <text x="132" y="20" font-family="Inter" font-size="16" font-weight="400" fill="#4B5563">·</text>
+    <text x="148" y="20" font-family="Inter" font-size="14" font-weight="500" fill="#9CA3AF">AI BUILDER SCHOOL</text>
+  </g>
+
+  <!-- Pill Badge: LIVE WORKSHOP with pulsing green dot motif -->
+  <g transform="translate(72, 118)">
+    <rect x="0" y="0" width="168" height="34" rx="17" fill="rgba(34, 197, 94, 0.12)" stroke="rgba(34, 197, 94, 0.35)" stroke-width="1" />
+    <!-- Pulse ambient outer ring -->
+    <circle cx="20" cy="17" r="7" fill="#22c55e" fill-opacity="0.25" />
+    <!-- Core emerald dot -->
+    <circle cx="20" cy="17" r="4.5" fill="#22c55e" filter="url(#badgeGlow)" />
+    <text x="36" y="22" font-family="JetBrains Mono" font-size="11.5" font-weight="700" fill="#22c55e" letter-spacing="1.6">LIVE WORKSHOP</text>
+  </g>
+
+  <!-- Giant Display Headline: "AI FOUNDATIONS 101" -->
+  <g transform="translate(72, 252)">
+    <text x="0" y="0" font-family="Barlow Condensed" font-size="110" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">AI FOUNDATIONS 101</text>
+  </g>
+
+  <!-- Subline: 1-sentence value prop from brand brief -->
+  <g transform="translate(72, 298)">
+    <text x="0" y="0" font-family="Inter" font-size="24" font-weight="400" fill="#E5E7EB" line-height="34">
+      <tspan x="0" dy="0">A live, hands-on vibe-coding workshop for builders</tspan>
+      <tspan x="0" dy="34" fill="#9CA3AF">shipping real-world applications with modern AI tools.</tspan>
+    </text>
+  </g>
+
+  <!-- Toolchain Chips Row -->
+  <g transform="translate(72, 404)">
+    <text x="0" y="-12" font-family="JetBrains Mono" font-size="11" font-weight="600" fill="#6B7280" letter-spacing="1.2">SUPPORTED AI TOOLCHAIN</text>
+
+    <!-- Chip 1: Google AI Studio -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="154" height="36" rx="8" fill="url(#chipBg)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <circle cx="16" cy="18" r="3.5" fill="#38bdf8"/>
+      <text x="28" y="23" font-family="Inter" font-size="13" font-weight="600" fill="#F3F4F6">Google AI Studio</text>
+    </g>
+
+    <!-- Chip 2: Lovable -->
+    <g transform="translate(164, 0)">
+      <rect x="0" y="0" width="94" height="36" rx="8" fill="url(#chipBg)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <circle cx="16" cy="18" r="3.5" fill="#f43f5e"/>
+      <text x="28" y="23" font-family="Inter" font-size="13" font-weight="600" fill="#F3F4F6">Lovable</text>
+    </g>
+
+    <!-- Chip 3: v0 -->
+    <g transform="translate(268, 0)">
+      <rect x="0" y="0" width="60" height="36" rx="8" fill="url(#chipBg)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <text x="18" y="23" font-family="JetBrains Mono" font-size="13" font-weight="700" fill="#F3F4F6">v0</text>
+    </g>
+
+    <!-- Chip 4: Manus -->
+    <g transform="translate(338, 0)">
+      <rect x="0" y="0" width="86" height="36" rx="8" fill="url(#chipBg)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <circle cx="16" cy="18" r="3.5" fill="#a855f7"/>
+      <text x="28" y="23" font-family="Inter" font-size="13" font-weight="600" fill="#F3F4F6">Manus</text>
+    </g>
+
+    <!-- Chip 5: Gemini -->
+    <g transform="translate(434, 0)">
+      <rect x="0" y="0" width="92" height="36" rx="8" fill="url(#chipBg)" stroke="rgba(34, 197, 94, 0.25)" stroke-width="1"/>
+      <circle cx="16" cy="18" r="3.5" fill="#22c55e"/>
+      <text x="28" y="23" font-family="Inter" font-size="13" font-weight="600" fill="#22c55e">Gemini</text>
+    </g>
+  </g>
+
+  <!-- Technical Checksum Footer Strip -->
+  <g transform="translate(72, 545)">
+    <line x1="0" y1="-16" x2="520" y2="-16" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <text x="0" y="6" font-family="JetBrains Mono" font-size="13" font-weight="500" fill="#6B7280">
+      <tspan fill="#22c55e">● OK</tspan>
+      <tspan dx="10" fill="#9CA3AF">build: og-v1</tspan>
+      <tspan dx="10" fill="#4B5563">|</tspan>
+      <tspan dx="10" fill="#9CA3AF">sha256:0x7f8b92c4</tspan>
+      <tspan dx="10" fill="#4B5563">|</tspan>
+      <tspan dx="10" fill="#6B7280">krackeddevs.com/sandbox</tspan>
+    </text>
+  </g>
+
+  <!-- 3. Right Side: Frosted Terminal Workbench Card (x=680, width=448, height=470) -->
+  <g transform="translate(680, 80)">
+    <!-- Ambient card glow -->
+    <rect x="-10" y="-10" width="468" height="490" rx="24" fill="#22c55e" fill-opacity="0.04" />
+    
+    <!-- Main Card Body -->
+    <rect x="0" y="0" width="448" height="470" rx="16" fill="url(#cardBg)" stroke="url(#cardBorder)" stroke-width="1.2" />
+
+    <!-- Terminal Titlebar -->
+    <rect x="0" y="0" width="448" height="42" rx="16" fill="rgba(255, 255, 255, 0.03)" />
+    <line x1="0" y1="42" x2="448" y2="42" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+    <!-- macOS style window buttons -->
+    <circle cx="24" cy="21" r="5" fill="#ef4444" fill-opacity="0.8" />
+    <circle cx="40" cy="21" r="5" fill="#eab308" fill-opacity="0.8" />
+    <circle cx="56" cy="21" r="5" fill="#22c55e" fill-opacity="0.8" />
+
+    <!-- Title in bar -->
+    <text x="80" y="25" font-family="JetBrains Mono" font-size="12" font-weight="500" fill="#9CA3AF">workbench_coach.ts · 1.5h</text>
+    
+    <!-- Status Chip -->
+    <rect x="338" y="11" width="94" height="20" rx="10" fill="rgba(34, 197, 94, 0.15)" stroke="rgba(34, 197, 94, 0.3)" stroke-width="1"/>
+    <text x="350" y="25" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#22c55e">● READY</text>
+
+    <!-- Terminal Code / Content -->
+    <g transform="translate(24, 72)" font-family="JetBrains Mono" font-size="12" line-height="22">
+      <!-- Comment line -->
+      <text x="0" y="0" fill="#6B7280">// 1.5-HOUR INTENSIVE SYLLABUS</text>
+      
+      <!-- Part 01 -->
+      <text x="0" y="28" fill="#9CA3AF">
+        <tspan fill="#38bdf8">const</tspan> <tspan fill="#F3F4F6">part01</tspan> = <tspan fill="#a78bfa">"05 Mins"</tspan>; <tspan fill="#6B7280">// The Shift</tspan>
+      </text>
+
+      <!-- Part 02 -->
+      <text x="0" y="60" fill="#22c55e" font-weight="700">// PART 02 · 60 MINS · LIVE VIBE CODING</text>
+      
+      <text x="0" y="88" fill="#E5E7EB">
+        <tspan fill="#38bdf8">const</tspan> prompt = <tspan fill="#f59e0b">await</tspan> Coach.<tspan fill="#60a5fa">crystallize</tspan>({
+      </text>
+      <text x="14" y="112" fill="#9CA3AF">target: <tspan fill="#34d399">"Production Web App"</tspan>,</text>
+      <text x="14" y="134" fill="#9CA3AF">tools:  [<tspan fill="#a78bfa">"AI Studio"</tspan>, <tspan fill="#a78bfa">"Lovable"</tspan>, <tspan fill="#a78bfa">"v0"</tspan>],</text>
+      <text x="14" y="156" fill="#9CA3AF">setup:  <tspan fill="#f43f5e">"Zero Code Editor"</tspan></text>
+      <text x="0" y="178" fill="#E5E7EB">});</text>
+
+      <!-- Part 03 -->
+      <text x="0" y="214" fill="#22c55e" font-weight="700">// PART 03 · 25 MINS · DEPLOY &amp; SHOWCASE</text>
+      <text x="0" y="240" fill="#E5E7EB">
+        <tspan fill="#f59e0b">await</tspan> Project.<tspan fill="#60a5fa">deploy</tspan>(<tspan fill="#a78bfa">"Share (free)"</tspan>);
+      </text>
+      <text x="0" y="264" fill="#E5E7EB">
+        <tspan fill="#f59e0b">await</tspan> Showcase.<tspan fill="#60a5fa">submit</tspan>(<tspan fill="#34d399">"KD Showcase"</tspan>);
+      </text>
+
+      <!-- Live status box -->
+      <g transform="translate(0, 304)">
+        <rect x="0" y="0" width="400" height="54" rx="8" fill="rgba(34, 197, 94, 0.08)" stroke="rgba(34, 197, 94, 0.25)" stroke-width="1" />
+        <circle cx="20" cy="27" r="4" fill="#22c55e" />
+        <text x="36" y="23" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#22c55e">ACTIVE VIBE CODING SESSION</text>
+        <text x="36" y="41" font-family="Inter" font-size="11.5" font-weight="400" fill="#9CA3AF">Pick idea · Coach writes prompt · Ship &amp; publish</text>
+      </g>
+    </g>
+  </g>
+</svg>
